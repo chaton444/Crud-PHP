@@ -1,0 +1,390 @@
+@font-face {
+  font-family: 'Alcubierre';
+  src: url('tipografia/Alcubierre.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #131212;
+  font-family: 'Alcubierre';
+  letter-spacing: 0.1em;
+}
+
+form {
+  background-color: #30303000;
+
+}
+
+article {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 48px;
+  /* Tamaño de fuente */
+  font-weight: bold;
+  /* Grosor de fuente */
+  text-align: center;
+  /* Centrado */
+  text-transform: uppercase;
+  /* Convertir todo el texto en mayúsculas */
+  letter-spacing: 15px;
+  /* Espacio entre letras */
+  color: #ffffff;
+  /* Color del texto */
+  margin-top: 50px;
+  /* Espacio en la parte superior */
+  margin-bottom: 50px;
+  /* Espacio en la parte inferior */
+}
+
+.articulologin {
+
+  background-color: #30303000;
+  width: 500px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+
+
+}
+
+.articuloform {
+
+  width: 500px;
+
+}
+
+nav {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+ul li ul {
+  display: none;
+}
+
+ul li:hover>ul {
+
+  display: block;
+}
+
+
+nav ul {
+  /*SUBMENU*/
+  background-color: #ffffff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+nav li {
+  background-color: #131212;
+  float: left;
+  position: relative;
+
+
+}
+
+nav li:hover a {
+
+  color: #000000;
+  background-color: #f7f7f7;
+}
+
+nav li a {
+  color: #fcfcfc;
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 13px;
+  transition: all 0.3s ease;
+}
+
+nav ul li ul a {
+  background-color: #303030;
+}
+
+nav ul li ul a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: #02394d;
+  color: #ffffff;
+}
+
+tr {
+  color: #000000;
+}
+
+.nombreproducto:hover {
+
+  color: white !important;
+  background-color: #8b8b8b;
+}
+
+.tabla-horizontal {
+
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.contenedor-tablas {
+  display: -moz-grid-group;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.table-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.contenedor-tablas table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+.contenedor-tablas th,
+.contenedor-tablas td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #dddddd00;
+}
+
+.contenedor-tablasr th {
+  background-color: #f2f2f2;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #ffffff00;
+  margin: 15% auto;
+  padding: 20px;
+  border: 0px solid #888;
+  width: 50%;
+  height: 40%;
+}
+
+.close {
+  color: #ffffff;
+  background-color: #00000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #292929;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#COMENTARIOS{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+
+  background-color: #ffffff;
+
+}
+#articulocomentario{
+  
+  border-radius: 5px;
+
+}
+#miFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="correo"] {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+button[type="submit"] {
+  background-color: #131212;
+  /* Cambiar el color de fondo */
+  color: white;
+  /* Cambiar el color del texto */
+  padding: 12px 20px;
+  /* Añadir padding para que se vea más grande */
+  border: none;
+  /* Eliminar el borde */
+  border-radius: 4px;
+  /* Añadir bordes redondeados */
+  cursor: pointer;
+  /* Cambiar el cursor a pointer */
+  transition: background-color 0.3s ease;
+  /* Añadir transición al color de fondo */
+}
+
+button {
+  background-color: #131212;
+  /* Cambiar el color de fondo */
+  color: white;
+  /* Cambiar el color del texto */
+  padding: 12px 20px;
+  /* Añadir padding para que se vea más grande */
+  border: none;
+  /* Eliminar el borde */
+
+  cursor: pointer;
+  /* Cambiar el cursor a pointer */
+  transition: background-color 0.3s ease;
+  /* Añadir transición al color de fondo */
+
+}
+
+button:hover {
+  background-color: #292929;
+  /* Cambiar el color de fondo */
+  color: rgb(255, 255, 255);
+  /* Cambiar el color del texto */
+}
+
+.registrar {
+  background-color: #131212;
+  /* Cambiar el color de fondo */
+  color: white;
+  /* Cambiar el color del texto */
+  padding: 12px 20px;
+  /* Añadir padding para que se vea más grande */
+  border: none;
+  /* Eliminar el borde */
+  border-radius: 4px;
+  /* Añadir bordes redondeados */
+  cursor: pointer;
+  /* Cambiar el cursor a pointer */
+  transition: background-color 0.3s ease;
+  /* Añadir transición al color de fondo */
+  text-decoration: none;
+  border: none;
+}
+
+.registrar:hover {
+  text-decoration: none;
+  background-color: #292929;
+  /* Cambiar el color de fondo al pasar el mouse */
+
+  color: #000000;
+}
+
+.registrar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  /* Cambiar el color del texto */
+}
+
+button[type="submit"]:hover {
+  background-color: #292929;
+  /* Cambiar el color de fondo al pasar el mouse */
+}
+
+textarea {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  resize: none;
+  outline: none;
+}
+
+textarea:focus {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background-color: #00000000;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel-inner img{
+  max-height: 10%;
+  max-width:50%;
+  padding-top: 4%;
+  display:block;
+  margin:0 auto;
+ 
+}
+
